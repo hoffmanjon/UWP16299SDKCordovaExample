@@ -1,0 +1,17 @@
+{
+  "name": "SqlServerPlugin",
+  "version": "0.0.1",
+  "description": "SQLServer Plugin",
+  "cordova": {
+    "id": "com.myfuelmaster.sqlserverplugin",
+    "platforms": [
+      "windows"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-windows"
+  ],
+  "author": "Microsoft",
+  "license": "ISC"
+}

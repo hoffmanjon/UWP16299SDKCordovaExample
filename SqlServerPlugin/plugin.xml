@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com.myfuelmaster.sqlserverplugin" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>SqlServerPlugin</name>
+    <js-module name="SqlServerPlugin" src="www/SqlServerPlugin.js">
+        <clobbers target="SqlServerPlugin" />
+    </js-module>
+    <platform name="windows">
+        <config-file target="package.appxmanifest" parent="/Package/Capabilities">
+            <Capability Name="internetClient" />
+            <uap:Capability Name="enterpriseAuthentication" />
+        </config-file>
+        <framework custom="true" src="src/windows/SqlComponent.winmd"></framework>
+        <js-module name="SqlServerPluginProxy" src="src/windows/SqlServerPluginProxy.js">
+            <merges target="" />
+        </js-module>
+    </platform>  
+</plugin>
